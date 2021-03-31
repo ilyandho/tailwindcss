@@ -9,11 +9,45 @@
   </head>
   <body>
     <main class>
-      <div class="flex justify-around items-center bg-green-200">
-        <h1 class="text-4xl py-4">This Tailwind</h1>
+      <div
+        class="flex justify-around items-center bg-green-200 flex-col sm:flex-row"
+      >
+        <div
+          class="flex justify-around w-full sm:w-auto border-b-2 border-gray-200"
+        >
+          <h1 class="text-4xl py-4">This Tailwind</h1>
+          <svg
+            class="burger w-8 block sm:hidden cursor-pointer"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
 
+          <svg
+            class="cross w-8 hidden cursor-pointer"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
         <nav class="hidden sm:block">
-          <ul class="flex text-lg">
+          <ul class="flex flex-col sm:flex-row text-lg">
             <li class="pl-4 cursor-pointer">About</li>
             <li class="pl-4 cursor-pointer">Projects</li>
             <li class="pl-4 cursor-pointer">Contact</li>
@@ -21,5 +55,6 @@
         </nav>
       </div>
     </main>
+    <script src="./index.js"></script>
   </body>
 </html>
